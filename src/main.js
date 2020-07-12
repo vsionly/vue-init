@@ -3,19 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 // import ElementUI from 'element-ui';
-import {
-    Input,
-    Select,
-    Autocomplete,
-    Option
-} from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css';
+import '@/common/css/index.styl'
 
-// Vue.use(ElementUI);
-Vue.use(Input)
-Vue.use(Select)
-Vue.use(Option)
-Vue.use(Autocomplete)
 Vue.config.productionTip = false
 
 class Bus{
@@ -23,7 +12,11 @@ class Bus{
         this.evt = {}
     }
     $on(name, fn) {
-        this.evt[name] = fn
+        if (!this.evt[name]) {
+            this.evt[name] = []
+        }
+        this.evt[name].push(fn)
+
     }
     $emit(name, arg) {
         // this.evt[name](arg)

@@ -1,46 +1,55 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <complete></complete>
-  </div>
+    <div class="hello" style="background: #0f0;">
+        <slot name="top" v-bind:oj="oj">pppppppppp</slot>
+        <slot name="foot" v-bind:data="user"></slot>
+        <slot name="foot" v-bind:data="oj"></slot>
+        <slot name="foot"></slot>
+        <slot>111111</slot>
+        <slot>222222</slot>
+        <button @click="test()">传播</button>
+        </ul>
+    </div>
 </template>
 
 <script>
-import Complete from 'Complete'
 export default {
-  name: 'HelloWorld',
-  components: {
-    Complete
-  },
-  props: {
-    msg: String
-  }
+    name: 'HelloWorld',
+    data() {
+        return {
+            user: {
+                name: '李四',
+                gender: '男',
+                age: 22
+            },
+            oj: {
+                aa: 111
+            }
+        }
+    },
+    created() {
+
+    },
+    methods: {
+        test() {
+            this.$bus.$emit('ee')
+        }
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
 h3
-  margin 40px 0 0
+    margin 40px 0 0
 
 ul
-  list-style-type none
-  padding 0
+    list-style-type none
+    padding 0
 
 li
-  display inline-block
-  margin 0 10px
+    display inline-block
+    margin 0 10px
 
 a
-  color #42b983
+    color #42b983
 </style>

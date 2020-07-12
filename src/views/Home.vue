@@ -3,6 +3,18 @@
         <img alt="Vue logo" src="../assets/logo.png">
         <p>来自远方的你{{num}}</p>
         <complete></complete>
+        <HelloWorld>
+            <div>333</div>
+            <template v-slot:foot="data">
+                <i>{{data}}</i>
+                <p>11111111111111</p>
+            </template>
+            <div>1111</div>
+            <template v-slot:top>
+                <p>王者</p>
+            </template>
+            <div>2222</div>
+        </HelloWorld>
     </div>
 </template>
 
@@ -11,6 +23,7 @@
 // console.log(process)
 
 import Complete from '../components/Complete'
+import HelloWorld from '../components/HelloWorld'
 export default {
     name: 'home',
     provide() {
@@ -24,10 +37,10 @@ export default {
         }
     },
     components: {
-        Complete
+        Complete,
+        HelloWorld
     },
     created() {
-        this.$bus.$on('console', (e)=>{console.log(e); this.num = e.data})
     },
     methods: {
     }

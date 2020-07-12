@@ -17,6 +17,11 @@ export default new Router({
       path: '/complete',
       name: 'complete',
       component: resolve => require(['@/components/Complete.vue'], resolve)
+    },
+    {
+      path: '/hello',
+      name: 'hello',
+      component: resolve => require(['@/components/HelloWorld.vue'], resolve)
     }
   ]
 })
