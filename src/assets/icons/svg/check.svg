@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>btn_primary</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1097" height="175" rx="4"></rect>
+        <filter x="-1.7%" y="-9.7%" width="103.5%" height="121.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="诊前管理=增加知识" transform="translate(-1277.000000, -273.000000)">
+            <rect fill="#F0F2F5" x="0" y="0" width="1440" height="1116"></rect>
+            <rect id="Rectangle-5" fill="#FFFFFF" x="259" y="84" width="1161" height="1012" rx="2"></rect>
+            <g id="btn_primary" transform="translate(291.000000, 249.000000)">
+                <g id="bg">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#E4E7ED" stroke-width="1" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" x="0.5" y="0.5" width="1096" height="174" rx="4"></rect>
+                </g>
+                <g id="chakan-2" transform="translate(986.000000, 24.000000)" fill-rule="nonzero">
+                    <path d="M7.828125,14.5741964 C4.06976046,14.5742984 0.817611004,11.959266 0.0109821406,8.28848214 C0.241208553,7.23540655 0.682896246,6.24005401 1.30926786,5.36276786 C0.826240163,7.97754591 1.95247908,10.6279047 4.1700851,12.09508 C6.38769111,13.5622554 9.26741603,13.5622554 11.485022,12.09508 C13.7026281,10.6279047 14.828867,7.97754591 14.3458393,5.36276786 C14.9606964,6.225625 15.4086964,7.21648214 15.6429821,8.28848214 C14.8365372,11.9584296 11.5856331,14.5732253 7.828125,14.5741964 Z" id="路径" fill="#1F2D3D"></path>
+                    <path d="M0.0109821406,8.28848214 C0.819221858,4.61978858 4.07031289,2.00697487 7.82698214,2.00697487 C11.5836514,2.00697487 14.8347424,4.61978858 15.6429821,8.28848214 C15.4128096,9.34067117 14.9715253,10.3352134 14.3458393,11.2119107 C14.828867,8.59713267 13.7026281,5.94677392 11.485022,4.47959854 C9.26741603,3.01242316 6.38769111,3.01242316 4.1700851,4.47959854 C1.95247908,5.94677392 0.826240163,8.59713267 1.30926786,11.2119107 C0.68317691,10.3353067 0.241501107,9.34075851 0.0109821406,8.28848214 Z" id="路径" fill="#1F2D3D"></path>
+                    <path d="M7.828125,11.145625 C9.40608143,11.145625 10.6852679,9.86643857 10.6852679,8.28848214 C10.6852679,6.71052571 9.40608143,5.43133928 7.828125,5.43133928 C6.25016857,5.43133928 4.97098214,6.71052571 4.97098214,8.28848214 C4.97098214,9.86643857 6.25016857,11.145625 7.828125,11.145625 Z M7.828125,9.77419642 C7.00758766,9.77419642 6.34241072,9.10901948 6.34241072,8.28848214 C6.34241072,7.4679448 7.00758766,6.80276786 7.828125,6.80276786 C8.64866232,6.80276786 9.31383924,7.46794482 9.31383924,8.28848214 C9.31383924,9.10901946 8.64866232,9.77419642 7.828125,9.77419642 L7.828125,9.77419642 Z" id="形状" fill="#4865FF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
