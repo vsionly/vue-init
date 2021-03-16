@@ -24,7 +24,6 @@ module.exports = {
                 symbolId: 'icon-[name]'
             })
     },
-
     devServer: {
         open: true,
         port: 80

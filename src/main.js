@@ -10,14 +10,8 @@ Vue.component('SvgIcon', SvgIcon)
 import '@/assets/icons/index.js'
 
 // 按需引入element
-import { Menu, MenuItem, Submenu, Select, Option, Pagination, Table, TableColumn, Dialog } from 'element-ui'
-Vue.use(Menu).use(MenuItem).use(Submenu).use(Select).use(Option).use(Pagination).use(Table).use(TableColumn).use(Dialog)
-Vue.prototype.$ELEMENT = { size: 'medium' }
 
 Vue.config.productionTip = false
-
-import  * as api from './api.js'
-Vue.prototype.$api = api
 
 new Vue({
     router,
