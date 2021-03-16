@@ -1,51 +1,40 @@
-/**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, input
-  margin: 0
-  padding: 0
-  border: 0
-  font-weight: normal
-  vertical-align: baseline
+body, html {
+    line-height: 1.4;
+    font-family: 'PingFang SC', 'STHeitiSC-Light', 'Helvetica-Light', "Microsoft Yahei", arial, sans-serif, 'Droid Sans Fallback', SimSun;
+    background: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    min-width 1260px
+}
+/* 清楚元素内外边距 边框 */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, tt, u, i, dl, dt, dd, ol, ul, li, form, label,table, tbody, tfoot, thead, tr, th, td, footer, header, menu, nav, section, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section
-  display: block
-
-body
-  line-height: 1.5
-  font-size: 14px
-
-table
-  border-collapse: collapse
-  border-spacing: 0
-
-/* custom */
-
+/* 设置盒模型标准 */
+div, header, a{
+    box-sizing: border-box;
+}
+img, span, p
+    vertical-align middle
+p
+    color #333
+h2
+    font-weight 600
+h3, h4, .h4
+    font-weight 500
+h2
+    font-size 42px
+h3
+    font-size 28px
+h4, .h4, .f24
+    font-size 24px
+.h4
+    display inline-block
 a
-  color: #7e8c8d
-  -webkit-backface-visibility: hidden
-  text-decoration: none
-
-li
-  list-style: none
-
-body
-  -webkit-text-size-adjust: none
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-div, ul
-  box-sizing: border-box
+    color: inherit
+    -webkit-backface-visibility: hidden
+    text-decoration: none
