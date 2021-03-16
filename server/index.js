@@ -23,6 +23,7 @@ app.use(historyApiFallback.default({
     index: '/'
 }))
 
-app.listen( Ynn.cargs.port || 5018 );
+const port = Ynn.cargs.port || 5018
+app.listen( port );
 module.exports = app;
-console.log('服务运行中：port = 5018')
+console.log('服务运行中：port = ' + port)
