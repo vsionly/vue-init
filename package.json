@@ -7,6 +7,10 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:vsionly/vue-demo.git"
+  },
   "dependencies": {
     "koa2-connect-history-api-fallback": "^0.1.2",
     "ynn": "^0.1.3",
