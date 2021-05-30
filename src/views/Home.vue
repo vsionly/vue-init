@@ -18,7 +18,7 @@
 
 <script>
 // @ is an alias to /src
-// console.log(process)
+import HelloWorld from '@/components/HelloWorld.vue'
 
 // import Complete from '../components/Complete'
 // import HelloWorld from '../components/HelloWorld'

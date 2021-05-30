@@ -8,7 +8,7 @@ export default new Vuex.Store({
         module1: {
             state: {
                 count: 1,
-                name: '灏忕孩'
+                name: '小红'
             },
             mutations: {
                 edit(state, v) {
@@ -17,10 +17,10 @@ export default new Vuex.Store({
             },
             getters:{
                 count(state){
-                    return "璁℃暟:"+state.count
+                    return "计数:"+state.count
                 },
                 name(state,getters){
-                    return getters.count+'鍚嶅瓧:'+state.name
+                    return getters.count+'名字:'+state.name
                 }
             },
             actions: {
@@ -35,7 +35,7 @@ export default new Vuex.Store({
         module2: {
             state: {
                 count: 2,
-                name: '灏忔槑'
+                name: '小明'
             },
             mutations: {
                 edit(state, v) {

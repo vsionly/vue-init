@@ -1,38 +1,14 @@
 <template>
-    <div class="hello" style="background: #0f0;">
-        <slot name="top" v-bind:oj="oj">pppppppppp</slot>
-        <slot name="foot" v-bind:data="user"></slot>
-        <slot name="foot" v-bind:data="oj"></slot>
-        <slot name="foot"></slot>
-        <slot>111111</slot>
-        <slot>222222</slot>
-        <button @click="test()">传播</button>
-        </ul>
+    <div class="hello">
+
     </div>
 </template>
 
 <script>
 export default {
     name: 'HelloWorld',
-    data() {
-        return {
-            user: {
-                name: '李四',
-                gender: '男',
-                age: 22
-            },
-            oj: {
-                aa: 111
-            }
-        }
-    },
-    created() {
-
-    },
-    methods: {
-        test() {
-            this.$bus.$emit('ee')
-        }
+    props: {
+        msg: String
     }
 }
 </script>

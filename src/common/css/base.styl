@@ -1,0 +1,186 @@
+html, body
+    height: 100%
+    min-width 1200px
+    overflow: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.svg-icon
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    overflow: hidden;
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
+    font-weight bold
+    color $mainC
+h6, .h6
+    font-size 14px
+h5, .h5
+    font-size 16px
+h4, .h4
+    font-size 18px
+h3, .h3
+    font-size 20px
+h2, .h2
+    font-size 24px
+h1, .h1
+    font-size 28px
+
+.fz16
+    font-size 16px
+// 弹性布局
+.flex
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+.flex1
+    flex 1px
+// 主轴为垂直的弹性布局
+.flex-v
+    display flex
+    flex-direction column
+    height 100%
+
+// 按钮
+.inline
+    display inline-block
+
+.w60
+    width 60px
+.w60-child > *
+    width 60px
+.w80
+    width 80px
+.w140
+    width 140px
+.w160
+    width 160px
+.w170
+    width 170px
+.w180
+    width 180px
+.w400
+    width 400px
+.w500
+    width 500px
+
+.px12
+    padding-left 12px
+    padding-right 12px
+.plb32
+    padding-left 32px
+    padding-bottom 32px
+.py20-10
+    padding-top 20px
+    padding-bottom 10px
+.pb20
+    padding-bottom 20px
+.pt20
+    padding-top 20px
+
+.p32
+    padding 32px
+.py20-32
+    padding-top 20px
+    padding-bottom 32px
+.pb32
+    padding-bottom 32px
+.pb42
+    padding-bottom 42px
+.pb50
+    padding-bottom 50px
+.pr50
+    padding-right 50px
+.pt120
+    padding-top 120px
+
+.mr4
+    margin-right 4px
+.my5-10
+    margin-top 5px
+    margin-bottom 10px
+.mb6
+    margin-bottom 6px !important
+.ml4
+    margin-left 4px
+.mr10
+    margin-right 10px
+.mt12
+    margin-top 12px
+.mb12
+    margin-bottom 12px
+.mb14
+    margin-bottom 14px
+.mb16
+    margin-bottom 16px
+.mb20
+    margin-bottom 20px
+.mt20
+    margin-top 20px
+.mr20
+    margin-right 20px
+.ml20
+    margin-left 20px
+.ml26
+    margin-left 26px
+.mb28
+    margin-bottom 28px
+.mb30
+    margin-bottom 30px
+.mr30
+    margin-right 30px !important
+
+.mt32
+    margin-top 32px
+.ml32
+    margin-left 32px
+.mt36
+    margin-top 36px
+.mb40
+    margin-bottom 40px
+.mt50
+    margin-top 50px
+.mr80
+    margin-right 80px !important
+.pr32-in *
+        padding-right 32px
+.fl
+    float left
+.fr
+    float right
+
+.middle
+    vertical-align middle
+.top
+    vertical-align top
+.bottom
+    vertical-align bottom
+.va-1
+    vertical-align -1px
+
+.left
+    text-align left
+.center
+    text-align center
+.right
+    text-align right
+
+.error
+    color $err
+.disabled
+    color $disabled
+// 子元素垂直居中
+.middle-child *
+    vertical-align middle
+.clear:after
+    content ''
+    display block
+    clear both
+.pre-wrap
+    white-space pre-wrap
+.pointer
+    cursor pointer
