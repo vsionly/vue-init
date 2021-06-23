@@ -14,6 +14,9 @@ Vue.use(Menu).use(MenuItem).use(Submenu).use(Checkbox).use(CheckboxGroup).use(Ca
 Vue.prototype.$message = Message
 Vue.prototype.$ELEMENT = { size: 'medium' }
 
+import  * as http from './http.js'
+Vue.prototype.$http = http
+
 Vue.config.productionTip = false
 
 new Vue({
