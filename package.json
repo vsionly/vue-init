@@ -1,31 +1,33 @@
 {
-  "name": "vue-cli3",
+  "name": "vue-init",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve --mode dev",
-    "build": "vue-cli-service build",
-    "test": "vue-cli-service build --mode test",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build && cp -r ./dist/. ./view",
+    "build:env": "vue-cli-service build && cp -r ./dist/. ./view && pm2 restart luoshi",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "^2.6.5",
-    "element-ui": "^2.12.0",
-    "swiper": "^5.4.5",
-    "vue": "^2.6.10",
-    "vue-awesome-swiper": "^4.1.1",
-    "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "babel-plugin-component": "^1.1.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.2",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.1.1",
-    "@vue/cli-plugin-eslint": "^3.1.1",
-    "@vue/cli-service": "^3.1.1",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "stylus": "^0.54.5",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.10"
+    "svg-sprite-loader": "^6.0.8",
+    "vue-template-compiler": "^2.6.11"
   }
 }

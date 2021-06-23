@@ -4,9 +4,19 @@ module.exports = {
         loaderOptions: {
             stylus: {
                 import: [
-                    '~@/common/css/variable.styl',
-                    '~@/common/css/mixin.styl'
+                    '~common/css/variable.styl'
+                    // '~@/common/css/mixin.styl'
                 ]
+            }
+        }
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                'assets': '@/assets',
+                'common': '@/common',
+                'components': '@/components',
+                'source': '@/source'
             }
         }
     },
@@ -24,7 +34,6 @@ module.exports = {
                 symbolId: 'icon-[name]'
             })
     },
-
     devServer: {
         open: true,
         port: 80

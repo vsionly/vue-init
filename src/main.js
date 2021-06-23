@@ -1,36 +1,23 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
-// import ElementUI from 'element-ui';
-import '@/common/css/index.styl'
+import router from './router.js'
+// import store from './store'
+
+// 全局注册icon组件
+import SvgIcon from 'components/SvgIcon.vue'
+Vue.component('SvgIcon', SvgIcon)
+import 'common/js/icon.js'
+
+// element ui引入设置
+import { Menu, MenuItem, Submenu, Checkbox, CheckboxGroup, Cascader, Select, Option, Pagination, Table, TableColumn, Dialog, Message, DatePicker, Autocomplete, Switch, Loading, Tooltip, Popover } from 'element-ui'
+Vue.use(Menu).use(MenuItem).use(Submenu).use(Checkbox).use(CheckboxGroup).use(Cascader).use(Select).use(Option).use(Pagination).use(Table).use(TableColumn).use(Dialog).use(DatePicker).use(Autocomplete).use(Switch).use(Loading.directive).use(Tooltip).use(Popover)
+Vue.prototype.$message = Message
+Vue.prototype.$ELEMENT = { size: 'medium' }
 
 Vue.config.productionTip = false
 
-class Bus{
-    constructor(){
-        this.evt = {}
-    }
-    $on(name, fn) {
-        if (!this.evt[name]) {
-            this.evt[name] = []
-        }
-        this.evt[name].push(fn)
-
-    }
-    $emit(name, arg) {
-        // this.evt[name](arg)
-        this.evt[name].forEach(v => {
-            console.log(v, 1111111111)
-        })
-    }
-}
-
-// Vue.prototype.$bus = new Vue()
-Vue.prototype.$bus = new Bus()
-
 new Vue({
-  router,
-  store,
-  render: h => h(App)
+    router,
+    // store,
+    render: h => h(App)
 }).$mount('#app')
